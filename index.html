@@ -11,17 +11,28 @@
 </head>
 
 <body id="home">
+    <div class="custom-cursor"></div>
+<div class="cursor-dot"></div>
+<div class="scroll-progress"></div>
 
     <!-- ==================== NAVIGATION ==================== -->
 
-    <header class="navbar">
+   <header class="navbar">
 
-        <div class="profile-name">
-            <h2>Tatheer Fatima</h2>
-            <p>Computer Science Student</p>
-        </div>
+    <div class="profile-name">
+        <h2>Tatheer Fatima</h2>
+        <p>Computer Science Student</p>
+    </div>
 
-        <nav class="nav-links">
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu">
+        ☰
+    </button>
+
+    <nav class="nav-links">
 
             <a href="#about">About Me</a>
             <a href="#projects">Project Details</a>
@@ -29,9 +40,9 @@
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
             <a href="#certifications">Certifications</a>
+            <a href="#articles">Articles</a>
             <a href="#recommendations">Recommendations</a>
             <a href="#contact">Contact</a>
-
             <!-- DARK / LIGHT MODE BUTTON -->
 
             <button
@@ -52,9 +63,11 @@
     <section id="about" class="about-section">
 
         <div class="profile-image">
-    <div class="monogram">
-    <span>TF</span>
-</div>
+
+    <img
+        src="images/tatheer-profile.png"
+        alt="Tatheer Fatima">
+
 </div>
 
         <div class="about-text">
@@ -63,19 +76,24 @@
                 Hi, I'm
                 <span>Tatheer Fatima</span>
             </h1>
+            <p class="typing-text">
+    <span id="typing-role"></span>
+</p>
 
             <p>
-                I am a Computer Science student interested in frontend
-                development and software development. I enjoy turning ideas
-                into practical projects using HTML, CSS, JavaScript, Python,
-                and C++.
-            </p>
+    I am a Computer Science student with an interest in software
+    development, frontend development, and Python programming. I enjoy
+    turning ideas into practical projects and exploring how technology
+    can be used to solve real-world problems.
+</p>
 
-            <p>
-                I am continuously developing my programming and problem-solving
-                skills through academic work, personal projects, and
-                hands-on development experience.
-            </p>
+<p>
+    My experience includes working with HTML, CSS, JavaScript, Python,
+    and C++, while building projects that strengthen my understanding
+    of programming, data structures, problem-solving, and software
+    development. I am also continuously exploring new technologies
+    and learning about AI and modern development tools.
+</p>
 
         </div>
 
@@ -164,6 +182,33 @@
                 </p>
 
             </div>
+                        <div class="skill-card">
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                    alt="Git Logo">
+
+                <h3>Git</h3>
+
+                <p>
+                    Managing project versions and tracking changes using Git.
+                </p>
+
+            </div>
+                        <div class="skill-card">
+
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub Logo">
+
+                <h3>GitHub</h3>
+
+                <p>
+                    Managing repositories, collaborating on projects, and
+                    maintaining code using GitHub.
+                </p>
+
+            </div>
 
         </div>
 
@@ -182,9 +227,10 @@
             <h3>StudyFlow – Smart Academic Planner</h3>
 
             <p>
-                A student-focused web application designed to help organize
-                academic tasks, schedules, notes, and study activities.
-                Built using HTML, CSS, and JavaScript.
+                A student-focused web application designed to organize academic
+    tasks, schedules, notes, and study activities in one place.
+    The project helped me strengthen my understanding of frontend
+    development, responsive design, and JavaScript-based interactivity.
             </p>
 
             <p class="project-tech">
@@ -562,9 +608,174 @@
             </div>
 
         </div>
+                <div class="certificate-card">
+
+            <div class="certificate-image">
+
+                <img
+                    src="images/agents-and-workflows.png"
+                    alt="Agents and Workflows Certificate">
+
+            </div>
+
+            <div class="certificate-info">
+
+                <h3>Agents and Workflows</h3>
+
+                <p class="certificate-organization">
+                    OpenAI Academy
+                </p>
+
+                <p class="certificate-description">
+                    Completed the Agents and Workflows course from OpenAI Academy,
+                    developing an understanding of AI agents, workflows, tool use,
+                    and practical approaches to building AI-powered solutions.
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
+            <!-- ==================== ARTICLES & LEARNING ==================== -->
 
+    <section id="articles" class="section articles-section">
+
+        <h2 class="section-title">Articles & Learning</h2>
+
+
+        <!-- ==================== ARTICLES ==================== -->
+
+        <h3 class="subsection-title">Articles</h3>
+
+        <div class="articles-container">
+
+
+            <div class="article-card">
+
+                <h3>
+                    Learning to Work With AI: My Experience With Anthropic’s Claude 101
+                </h3>
+
+                <p>
+                    My experience learning about AI-assisted development through
+                    Anthropic’s Claude 101 course and exploring how AI tools can
+                    support modern software development.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="https://lnkd.in/p/d8mxXq3u"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Read Article →
+                </a>
+
+            </div>
+
+
+            <div class="article-card">
+
+                <h3>
+                    What I Learned from Completing Claude Code 101 by Anthropic
+                </h3>
+
+                <p>
+                    Reflections and key takeaways from completing Claude Code 101,
+                    including what I learned about using AI tools in development.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="https://lnkd.in/p/dnzzEBWd"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Read Article →
+                </a>
+
+            </div>
+
+
+            <div class="article-card">
+
+                <h3>
+                    From Chatbots to AI Agents: Understanding Agents and Workflows
+                </h3>
+
+                <p>
+                    An introduction to AI agents, structured workflows, tool use,
+                    multi-agent systems, and the importance of human oversight
+                    when building reliable AI systems.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="PASTE-YOUR-AGENTS-AND-WORKFLOWS-LINK-HERE"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Read Article →
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ==================== LEARNING & EVENTS ==================== -->
+
+        <h3 class="subsection-title">Learning & Events</h3>
+
+
+        <div class="learning-container">
+
+
+            <div class="learning-card">
+
+                <h3>
+                    ChatGPT 101: Applying AI in the Workplace (EMEA)
+                </h3>
+
+                <p class="learning-organization">
+                    OpenAI Academy
+                </p>
+
+                <p class="learning-date">
+                    August 19, 2026 · Online
+                </p>
+
+                <p>
+                    Attended an OpenAI Academy live session focused on applying
+                    ChatGPT and AI in workplace settings, gaining practical
+                    insights into using AI effectively in professional workflows.
+                </p>
+
+                <div class="learning-links">
+
+                    <a
+                        class="article-link"
+                        href="https://academy.openai.com/events/chatgpt-101-applying-ai-in-the-workplace-emea-5rq5xlz115"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Event →
+                    </a>
+
+                    <a
+                        class="article-link"
+                        href="https://lnkd.in/p/d87Kiwat"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn Post →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
 
     <!-- ==================== RECOMMENDATIONS ==================== -->
 
