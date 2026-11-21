@@ -3042,3 +3042,19 @@ body.dark-mode .typing-text {
         font-size: 17px;
     }
 }
+.learning-image img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+}
+.learning-card .learning-image img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+}
